@@ -1,8 +1,8 @@
 Stage Creation (AWS S3 Example):
 
 CREATE OR REPLACE STAGE my_s3_stage
-URL = 's3://your-bucket-name/path-to-file/'
-CREDENTIALS = (AWS_KEY_ID = 'your-key' AWS_SECRET_KEY = 'your-secret-key');
+URL = 's3://my-bucket-name/my-path-to-file/'
+CREDENTIALS = (AWS_KEY_ID = 'my-key' AWS_SECRET_KEY = 'my-secret-key');
 
 
 Snowpipe Definition:

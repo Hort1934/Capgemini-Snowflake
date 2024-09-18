@@ -6,8 +6,8 @@ CREATE WAREHOUSE IF NOT EXISTS nyc_airbnb_wh WITH WAREHOUSE_SIZE = 'XSMALL' AUTO
 
 -- Step 2: Create a Stage for the raw data in your cloud storage (e.g., AWS S3)
 CREATE OR REPLACE STAGE my_s3_stage
-URL = 's3://your-bucket-name/path-to-file/'
-CREDENTIALS = (AWS_KEY_ID = 'your-key' AWS_SECRET_KEY = 'your-secret-key');
+URL = 's3://my-bucket-name/my_path-to-file/'
+CREDENTIALS = (AWS_KEY_ID = 'my-key' AWS_SECRET_KEY = 'my-secret-key');
 
 -- Step 3: Create a table to hold the raw Airbnb data
 CREATE OR REPLACE TABLE raw_airbnb_data (
